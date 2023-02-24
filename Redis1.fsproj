@@ -6,10 +6,15 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <Compile Include="ExampleDomains.fs" />
         <Compile Include="RedisCache.fs" />
+        <Compile Include="DummyDB.fs" />
+        <Compile Include="Messages.fs" />
+        <Compile Include="Main.fs" />
     </ItemGroup>
 
     <ItemGroup>
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.3-beta1" />
       <PackageReference Include="StackExchange.Redis" Version="2.6.90" />
     </ItemGroup>
 
