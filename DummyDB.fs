@@ -1,7 +1,7 @@
 ﻿module Lyckaro.DummyDB
 
-let dummyDBLookup (lookupTime: int) (result: 'a) : Lazy<'a> =
-  lazy
+let dummyDBLookup (lookupTime: int) (result: 'a) : unit -> 'a =
+  fun () ->
     Async.RunSynchronously(
       async {
         do printfn $"db lookup of {result}"
